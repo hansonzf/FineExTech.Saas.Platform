@@ -1,0 +1,31 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Swashbuckle.AspNetCore" Version="6.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Application\DomainEventHandlers\ArrivedTransportDestination\" />
+    <Folder Include="Application\DomainEventHandlers\CancelTransportOrder\" />
+    <Folder Include="Application\DomainEventHandlers\ScheduleSetoutTimeChanged\" />
+    <Folder Include="Application\DomainEventHandlers\TransportGoalChanged\" />
+    <Folder Include="Application\DomainEventHandlers\MakingSchedule\" />
+    <Folder Include="Application\DomainEventHandlers\PickupCargoChanged\" />
+    <Folder Include="Application\DomainEventHandlers\PrepareSchedule\" />
+    <Folder Include="Application\DomainEventHandlers\ScheduleExecuted\" />
+    <Folder Include="Application\DomainEventHandlers\TransportOrderStatusChanged\" />
+    <Folder Include="Application\DomainEventHandlers\CargoHanding\" />
+    <Folder Include="Application\DomainEventHandlers\RouteChanged\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Shippment.Domain\Shippment.Domain.csproj" />
+  </ItemGroup>
+
+</Project>
